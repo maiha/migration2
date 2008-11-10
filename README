@@ -1,0 +1,24 @@
+Migration2
+==========
+
+Yet another migartion library for ActiveRecord
+
+
+Example
+=======
+
+class CreateUsers < Special::Migrations::Table
+  column :user,       :string
+  column :pass,       :string
+  column :created_at, :datetime
+  column :updated_at, :datetime
+end
+
+
+Special Options
+===============
+
+schema   : specify table_name explicitly on defining plural migrations
+fallback : one of :none, :log, :error(default)
+
+
